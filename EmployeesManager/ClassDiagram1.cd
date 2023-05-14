@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EmployeesManager.Clients" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAQABAAAAAAAAAAAAAAACAAAABAAAAAE=</HashCode>
+      <FileName>Classes\General Classes\Clients.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeesManager.Employee" Collapsed="true">
+    <Position X="3.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIQACAAAAAgAAIgACgAAAIAAAAAQAACAAACAgAgAAI=</HashCode>
+      <FileName>Classes\General Classes\Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeesManager.Payrolls" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IABAACAgEACAIAARAECEAAAYAkAACAAAAIAABFAAgAA=</HashCode>
+      <FileName>Classes\General Classes\Payrolls.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeesManager.Person" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAACAACAAAAAQAQAAQAABAAAAAAAAAAAAEo=</HashCode>
+      <FileName>Classes\General Classes\Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeesManager.Projects" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAKACAAEDCAAAAAAEIAAAJAAAAgEoAAAAAIgAAICAMA=</HashCode>
+      <FileName>Classes\General Classes\Projects.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeesManager.FormClientList" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAgAkAFAACEQEBSAAACEACCGQAogAUKIAgAAEEIAAQY=</HashCode>
+      <FileName>Interface\CleintForms-ManagerSide\FormClientList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeesManager.FormCreateClient" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kAAACAIAACAAAJAAQCCAAEAKgAAgAAiEABAQBARQAAA=</HashCode>
+      <FileName>Interface\CleintForms-ManagerSide\FormCreateClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeesManager.FormUpdateClient" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kAAAAAIAACAAIJEgACCAAEAKAAAgAAiEABAQAARQAAA=</HashCode>
+      <FileName>Interface\CleintForms-ManagerSide\FormUpdateClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeesManager.FormClientCreateTasks" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAACAAQBEAACCIAUAKAAAkAAgEAAAQAARQgAA=</HashCode>
+      <FileName>Interface\ClientsSideForms\Project(add_edit)\FormClientCreateTasks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeesManager.FormClientTasksList" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hCAAiABAACAAgFMAAIGEAACCBAggAQQAAQAgAAYAAQQ=</HashCode>
+      <FileName>Interface\ClientsSideForms\Project(add_edit)\FormClientTasksList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeesManager.FormClientUpdateTasks" Collapsed="true">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAACAgQBEAACCIAUAKAAAkAAAEAAAQAARwgAA=</HashCode>
+      <FileName>Interface\ClientsSideForms\Project(add_edit)\FormClientUpdateTasks .cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeesManager.FormCreateEmployee" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>0AAAAAoAAGAAAJEAACCAIEAKACAgAgiEABAQBARQMAA=</HashCode>
+      <FileName>Interface\EmployeeForms\FormCreateEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeesManager.FormEmployeeList" Collapsed="true">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEgAkAHAACAwEhSgAgCEAGASQAogASKIAAAAgEIBEQQ=</HashCode>
+      <FileName>Interface\EmployeeForms\FormEmployeeList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeesManager.FormUpdateEmployee" Collapsed="true">
+    <Position X="12.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>0AAAAAoAAGAAAJEgACCAQEAOACAgAgiEABAAAABQEAA=</HashCode>
+      <FileName>Interface\EmployeeForms\FormUpdateEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeesManager.FormClientRegister" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kogRIAIgCIAgCJAAQCiIIEACoACAAIOIAHggQQhQCA0=</HashCode>
+      <FileName>Interface\MainForm\FormClientRegister.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeesManager.FormFirstTimeLogin" Collapsed="true">
+    <Position X="14.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIARAAIgCIIgCBAAACiIAAACACCAAIcKAGQgQQhdCA0=</HashCode>
+      <FileName>Interface\MainForm\FormFirstTimeLogin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeesManager.FormHome" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJCYIhagaLAgABAEBiiIIBACAMgyApMIADAgAQgQAA0=</HashCode>
+      <FileName>Interface\MainForm\FormHome.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeesManager.FormHomeClient" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAYAAIkCKAgABABBiiIIBACBIAwDIMIADhgCQhUAA0=</HashCode>
+      <FileName>Interface\MainForm\FormHomeClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeesManager.FormHomeEmployee" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJAYAgYgKLggBDAEBiiIIBACAAgwBIMIADwgASgQEAw=</HashCode>
+      <FileName>Interface\MainForm\FormHomeEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeesManager.FormLogo" Collapsed="true">
+    <Position X="12.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAACAAABAAAgCAAAACAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Interface\MainForm\FormLogo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeesManager.FormPayroll" Collapsed="true">
+    <Position X="14.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAACCAEBQgAACAUCACQIIggAKAAAACAQAAACA=</HashCode>
+      <FileName>Interface\MainForm\FormPayroll.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeesManager.LoginForm" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIABAAIgOKIgDBAIACiAEAACAKAAAIcIAWggAQhcCAw=</HashCode>
+      <FileName>Interface\MainForm\LoginForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeesManager.FormCreateTasks" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wBgAAAAEACAgQBEgACCIQQAKQABkAAAEAAAGAABwkAA=</HashCode>
+      <FileName>Interface\ProjectForms\FormCreateTasks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeesManager.FormRegularEmployeeTasksList" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BCCBmAREACAAgFMAAIGEAACCAAggACQAAAAgAAYAAUQ=</HashCode>
+      <FileName>Interface\ProjectForms\FormRegularEmployeeTasksList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeesManager.FormTasksList" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BACAmAREACAAgFMgAIGEAACCAAggASAAAAAgAA4AEUQ=</HashCode>
+      <FileName>Interface\ProjectForms\FormTasksList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeesManager.FormUpdateTasks" Collapsed="true">
+    <Position X="14.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wBgACAAEACAgQBEAACCIAQAKQABEAAAEQAAWAABwgAA=</HashCode>
+      <FileName>Interface\ProjectForms\FormUpdateTasks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeesManager.Program" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeesManager.Properties.Resources" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAFAEAAAAQAJEBAAAQAIAAAAAAIAAACCAoA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmployeesManager.Properties.Settings" Collapsed="true">
+    <Position X="12.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAEAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

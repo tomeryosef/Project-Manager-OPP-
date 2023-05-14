@@ -1,0 +1,12 @@
+[
+  {
+    "IdClients": 1,
+    "Email": "tomer@gmail.com",
+    "Password": "tomer",
+    "FirstName_em": "Tomer",
+    "LastName_em": "Yosef",
+    "Gender_em": "Male",
+    "BirthDate_em": "2022-08-29T00:00:00",
+    "PhoneNumber_em": 54408826
+  }
+]

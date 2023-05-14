@@ -1,0 +1,569 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2C6921B3-8558-4914-8254-11C9EE505B00}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EmployeesManager</RootNamespace>
+    <AssemblyName>EmployeesManager</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>C:\Projects\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>5DC12FED69455C5A8A9A1DE0E520C128CB66939E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>COMPLETE_FLAT_UI_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\1317331.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <StartupObject>EmployeesManager.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.6.0.0\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=6.0.0.5, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.6.0.5\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\General Classes\Employee.cs" />
+    <Compile Include="Classes\General Classes\Payrolls.cs" />
+    <Compile Include="Classes\General Classes\Person.cs" />
+    <Compile Include="Classes\General Classes\Projects.cs" />
+    <Compile Include="Classes\General Classes\Clients.cs" />
+    <Compile Include="Interface\MainForm\FormHomeClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\MainForm\FormHomeClient.Designer.cs">
+      <DependentUpon>FormHomeClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ClientForms-ManagerSide\FormClientList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ClientForms-ManagerSide\FormClientList.designer.cs">
+      <DependentUpon>FormClientList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ClientForms-ManagerSide\FormCreateClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ClientForms-ManagerSide\FormCreateClient.designer.cs">
+      <DependentUpon>FormCreateClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ClientForms-ManagerSide\FormUpdateClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ClientForms-ManagerSide\FormUpdateClient.designer.cs">
+      <DependentUpon>FormUpdateClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ClientsSideForms\Project%28add_edit%29\FormClientCreateTasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ClientsSideForms\Project%28add_edit%29\FormClientCreateTasks.designer.cs">
+      <DependentUpon>FormClientCreateTasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ClientsSideForms\Project%28add_edit%29\FormClientTasksList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ClientsSideForms\Project%28add_edit%29\FormClientTasksList.designer.cs">
+      <DependentUpon>FormClientTasksList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\MainForm\FormHomeEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\MainForm\FormHomeEmployee.Designer.cs">
+      <DependentUpon>FormHomeEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\MainForm\FormPayroll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\MainForm\FormPayroll.designer.cs">
+      <DependentUpon>FormPayroll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\MainForm\FormFirstTimeLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\MainForm\FormFirstTimeLogin.Designer.cs">
+      <DependentUpon>FormFirstTimeLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\MainForm\FormClientRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\MainForm\FormClientRegister.Designer.cs">
+      <DependentUpon>FormClientRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\MainForm\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\MainForm\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ProjectForms\FormRegularEmployeeTasksList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ProjectForms\FormRegularEmployeeTasksList.designer.cs">
+      <DependentUpon>FormRegularEmployeeTasksList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ProjectForms\FormTasksList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ProjectForms\FormTasksList.designer.cs">
+      <DependentUpon>FormTasksList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ProjectForms\FormCreateTasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ProjectForms\FormCreateTasks.designer.cs">
+      <DependentUpon>FormCreateTasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ClientsSideForms\Project%28add_edit%29\FormClientUpdateTasks .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ClientsSideForms\Project%28add_edit%29\FormClientUpdateTasks .designer.cs">
+      <DependentUpon>FormClientUpdateTasks .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ProjectForms\FormUpdateTasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ProjectForms\FormUpdateTasks.designer.cs">
+      <DependentUpon>FormUpdateTasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\EmployeeForms\FormEmployeeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\EmployeeForms\FormEmployeeList.designer.cs">
+      <DependentUpon>FormEmployeeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\MainForm\FormLogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\MainForm\FormLogo.designer.cs">
+      <DependentUpon>FormLogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\EmployeeForms\FormCreateEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\EmployeeForms\FormCreateEmployee.designer.cs">
+      <DependentUpon>FormCreateEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\EmployeeForms\FormUpdateEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\EmployeeForms\FormUpdateEmployee.designer.cs">
+      <DependentUpon>FormUpdateEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\MainForm\FormHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\MainForm\FormHome.Designer.cs">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Interface\MainForm\FormHomeClient.resx">
+      <DependentUpon>FormHomeClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ClientForms-ManagerSide\FormClientList.resx">
+      <DependentUpon>FormClientList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ClientForms-ManagerSide\FormCreateClient.resx">
+      <DependentUpon>FormCreateClient.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ClientForms-ManagerSide\FormUpdateClient.resx">
+      <DependentUpon>FormUpdateClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ClientsSideForms\Project%28add_edit%29\FormClientCreateTasks.resx">
+      <DependentUpon>FormClientCreateTasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ClientsSideForms\Project%28add_edit%29\FormClientTasksList.resx">
+      <DependentUpon>FormClientTasksList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\MainForm\FormHomeEmployee.resx">
+      <DependentUpon>FormHomeEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\MainForm\FormPayroll.resx">
+      <DependentUpon>FormPayroll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\MainForm\FormFirstTimeLogin.resx">
+      <DependentUpon>FormFirstTimeLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\MainForm\FormClientRegister.resx">
+      <DependentUpon>FormClientRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\MainForm\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ProjectForms\FormRegularEmployeeTasksList.resx">
+      <DependentUpon>FormRegularEmployeeTasksList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ProjectForms\FormTasksList.resx">
+      <DependentUpon>FormTasksList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ProjectForms\FormCreateTasks.resx">
+      <DependentUpon>FormCreateTasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ClientsSideForms\Project%28add_edit%29\FormClientUpdateTasks .resx">
+      <DependentUpon>FormClientUpdateTasks .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ProjectForms\FormUpdateTasks.resx">
+      <DependentUpon>FormUpdateTasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\EmployeeForms\FormEmployeeList.resx">
+      <DependentUpon>FormEmployeeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\MainForm\FormLogo.resx">
+      <DependentUpon>FormLogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\EmployeeForms\FormCreateEmployee.resx">
+      <DependentUpon>FormCreateEmployee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\EmployeeForms\FormUpdateEmployee.resx">
+      <DependentUpon>FormUpdateEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\MainForm\FormHome.resx">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Clients.datasource" />
+    <None Include="Properties\DataSources\EmployeeManager.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\EmployeeManager.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\EmployeeManager.test.FormMenuPrincipal.datasource" />
+    <None Include="Properties\DataSources\EmployeesManager.Company.datasource" />
+    <None Include="Properties\DataSources\EmployeesManager.Employee.datasource" />
+    <None Include="Properties\DataSources\EmployeesManager.External.datasource" />
+    <None Include="Properties\DataSources\EmployeesManager.ICompany.datasource" />
+    <None Include="Properties\DataSources\EmployeesManager.IEmployee.datasource" />
+    <None Include="Properties\DataSources\EmployeesManager.Internal.datasource" />
+    <None Include="Properties\DataSources\EmployeesManager.iOffices.datasource" />
+    <None Include="Properties\DataSources\EmployeesManager.Offices.datasource" />
+    <None Include="Properties\DataSources\EmployeesManager.Payrolls.datasource" />
+    <None Include="Properties\DataSources\EmployeesManager.Tasks.datasource" />
+    <None Include="Properties\DataSources\Form1.datasource" />
+    <None Include="Properties\DataSources\FormClientCreateTasks.datasource" />
+    <None Include="Properties\DataSources\FormClientList.datasource" />
+    <None Include="Properties\DataSources\FormClientTasksList.datasource" />
+    <None Include="Properties\DataSources\FormClientUpdateTasks.datasource" />
+    <None Include="Properties\DataSources\FormCreateClient.datasource" />
+    <None Include="Properties\DataSources\FormCreateEmployee.datasource" />
+    <None Include="Properties\DataSources\FormCreateTasks.datasource" />
+    <None Include="Properties\DataSources\FormEmployeeList.datasource" />
+    <None Include="Properties\DataSources\FormHome.datasource" />
+    <None Include="Properties\DataSources\FormHomeClient.datasource" />
+    <None Include="Properties\DataSources\FormLogo.datasource" />
+    <None Include="Properties\DataSources\FormSearchEmployee.datasource" />
+    <None Include="Properties\DataSources\FormTasksList.datasource" />
+    <None Include="Properties\DataSources\FormUpdateClient.datasource" />
+    <None Include="Properties\DataSources\FormUpdateEmployee.datasource" />
+    <None Include="Properties\DataSources\FormUpdateTasks.datasource" />
+    <None Include="Properties\DataSources\iClients.datasource" />
+    <None Include="Properties\DataSources\iPayroll.datasource" />
+    <None Include="Properties\DataSources\iPerson.datasource" />
+    <None Include="Properties\DataSources\iProjects.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Bson.BsonObjectId.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Bson.BsonReader.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Bson.BsonWriter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Converters.BinaryConverter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Converters.BsonObjectIdConverter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Converters.DataSetConverter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Converters.DataTableConverter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Converters.DateTimeConverterBase.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Converters.DiscriminatedUnionConverter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Converters.EntityKeyMemberConverter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Converters.ExpandoObjectConverter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Converters.IsoDateTimeConverter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Converters.JavaScriptDateTimeConverter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Converters.KeyValuePairConverter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Converters.RegexConverter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Converters.StringEnumConverter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Converters.UnixDateTimeConverter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Converters.VersionConverter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Converters.XmlNodeConverter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.DefaultJsonNameTable.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.IJsonLineInfo.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonArrayAttribute.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonConstructorAttribute.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonContainerAttribute.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonConvert.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonConverter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonConverterAttribute.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonConverterCollection.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonDictionaryAttribute.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonException.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonExtensionDataAttribute.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonIgnoreAttribute.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonNameTable.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonObjectAttribute.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonPropertyAttribute.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonReader.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonReaderException.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonRequiredAttribute.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonSerializationException.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonSerializer.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonSerializerSettings.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonTextReader.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonTextWriter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonValidatingReader.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonWriter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.JsonWriterException.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Linq.Extensions.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Linq.JArray.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Linq.JConstructor.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Linq.JContainer.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Linq.JObject.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Linq.JProperty.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Linq.JPropertyDescriptor.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Linq.JRaw.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Linq.JsonLoadSettings.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Linq.JsonMergeSettings.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Linq.JsonSelectSettings.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Linq.JToken.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Linq.JTokenEqualityComparer.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Linq.JTokenReader.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Linq.JTokenWriter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Linq.JValue.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Schema.Extensions.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Schema.JsonSchema.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Schema.JsonSchemaException.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Schema.JsonSchemaGenerator.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Schema.JsonSchemaResolver.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Schema.ValidationEventArgs.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Schema.ValidationEventHandler.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.CamelCaseNamingStrategy.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.CamelCasePropertyNamesContractResolver.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.DefaultContractResolver.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.DefaultNamingStrategy.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.DefaultSerializationBinder.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.DiagnosticsTraceWriter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.DynamicValueProvider.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.ErrorContext.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.ErrorEventArgs.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.ExpressionValueProvider.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.ExtensionDataGetter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.ExtensionDataSetter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.IAttributeProvider.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.IContractResolver.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.IReferenceResolver.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.ISerializationBinder.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.ITraceWriter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.IValueProvider.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.JsonArrayContract.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.JsonContainerContract.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.JsonContract.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.JsonDictionaryContract.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.JsonDynamicContract.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.JsonISerializableContract.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.JsonLinqContract.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.JsonObjectContract.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.JsonPrimitiveContract.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.JsonProperty.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.JsonPropertyCollection.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.JsonStringContract.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.KebabCaseNamingStrategy.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.MemoryTraceWriter.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.NamingStrategy.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.OnErrorAttribute.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.ReflectionAttributeProvider.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.ReflectionValueProvider.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.SerializationCallback.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.SerializationErrorCallback.datasource" />
+    <None Include="Properties\DataSources\Newtonsoft.Json.Serialization.SnakeCaseNamingStrategy.datasource" />
+    <None Include="Properties\DataSources\Person.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\Projects.datasource" />
+    <None Include="Properties\DataSources\UserSettings.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\APs.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Employeesicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Payroll.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimize1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Planes.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shut-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\1317331.ico" />
+    <Content Include="Resources\satellite-dish %281%29.png" />
+    <Content Include="Resources\satellite-dish.png" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\employees.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Text.Json.6.0.5\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.5\build\System.Text.Json.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Text.Json.6.0.5\build\System.Text.Json.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Text.Json.6.0.5\build\System.Text.Json.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

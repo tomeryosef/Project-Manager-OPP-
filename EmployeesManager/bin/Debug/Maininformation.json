@@ -1,0 +1,30 @@
+[
+  {
+    "Id_em": 1,
+    "address_em": "Rishon Lezion",
+    "Qualifications_em": "MBA",
+    "BaseSalary_em": 15000.0,
+    "JoinDate_em": "2022-08-30T00:00:00",
+    "Position_em": "Manager",
+    "Password_em": "ofek",
+    "FirstName_em": "Ofek",
+    "LastName_em": "Ben hamo",
+    "Gender_em": "Male",
+    "BirthDate_em": "1998-02-09T00:00:00",
+    "PhoneNumber_em": 523857332
+  },
+  {
+    "Id_em": 2,
+    "address_em": "Lod",
+    "Qualifications_em": "BCA",
+    "BaseSalary_em": 15000.0,
+    "JoinDate_em": "2022-08-30T00:00:00",
+    "Position_em": "Manager",
+    "Password_em": "tomer",
+    "FirstName_em": "Tomer",
+    "LastName_em": "Yosef",
+    "Gender_em": "Male",
+    "BirthDate_em": "1998-05-08T00:00:00",
+    "PhoneNumber_em": 544408826
+  }
+]

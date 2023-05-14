@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="EmployeesManager.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Usernameid" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Username_logged</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
